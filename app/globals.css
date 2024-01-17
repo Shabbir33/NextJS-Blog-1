@@ -25,6 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Defined Global Variables */
 :root {
@@ -32,6 +35,13 @@ body {
   --textColor: black;
   --softBg: #f0f0f0;
   --softTextColor: #626262;
+}
+
+.dark {
+  --bg: #0f172a;
+  --textColor: #ddd;
+  --softBg: #1f273a;
+  --softTextColor: #a6a6a6;
 }
 
 * {
@@ -63,7 +73,7 @@ a {
   margin-right: auto;
   padding-left: 80px;
   padding-right: 80px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 @media screen and (max-width: 1536px) {
